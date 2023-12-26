@@ -1,38 +1,70 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1b1b1b;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+span {
+  font-weight: semi-bold;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type="range"] {
+  width: 80%;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="number"] {
+  width: 60px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result {
+  margin-top: 20px;
+}
+
+.result p {
+  font-size: 18px;
+  text-align: center;
+}
+
+strong {
+  color: #28a745;
+}
+
+/* FF durumunda rengi değiştirme */
+.result strong {
+  color: #dc3545;
 }
